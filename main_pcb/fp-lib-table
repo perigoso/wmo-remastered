@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name add_led)(type KiCad)(uri ${KIPRJMOD}/local/modules/add_led.pretty)(options "")(descr ""))
+  (lib (name local)(type KiCad)(uri ${KIPRJMOD}/local/modules/local.pretty)(options "")(descr ""))
+)

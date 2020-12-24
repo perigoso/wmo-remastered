@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW101
+U 1 1 5FBED23C
+P 6100 3750
+F 0 "SW101" H 6100 4035 50  0000 C CNN
+F 1 "SW_Push" H 6100 3944 50  0000 C CNN
+F 2 "Switches:Generic" H 6100 3950 50  0001 C CNN
+F 3 "~" H 6100 3950 50  0001 C CNN
+	1    6100 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW102
+U 1 1 5FBED582
+P 6100 4150
+F 0 "SW102" H 6100 4435 50  0000 C CNN
+F 1 "SW_Push" H 6100 4344 50  0000 C CNN
+F 2 "Switches:Generic" H 6100 4350 50  0001 C CNN
+F 3 "~" H 6100 4350 50  0001 C CNN
+	1    6100 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW103
+U 1 1 5FBED74C
+P 6100 4550
+F 0 "SW103" H 6100 4835 50  0000 C CNN
+F 1 "SW_Push" H 6100 4744 50  0000 C CNN
+F 2 "Switches:Generic" H 6100 4750 50  0001 C CNN
+F 3 "~" H 6100 4750 50  0001 C CNN
+	1    6100 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder SW104
+U 1 1 5FBF0004
+P 6200 3100
+F 0 "SW104" H 6430 3146 50  0000 L CNN
+F 1 "Rotary_Encoder" H 6430 3055 50  0000 L CNN
+F 2 "Switches:Encoder" H 6050 3260 50  0001 C CNN
+F 3 "~" H 6200 3360 50  0001 C CNN
+	1    6200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3750 6400 3750
+Wire Wire Line
+	6400 3750 6400 4150
+Wire Wire Line
+	6300 4550 6400 4550
+Connection ~ 6400 4550
+Wire Wire Line
+	6400 4550 6400 4650
+Wire Wire Line
+	6300 4150 6400 4150
+Connection ~ 6400 4150
+Wire Wire Line
+	6400 4150 6400 4550
+Wire Wire Line
+	5900 3100 5450 3100
+Wire Wire Line
+	5450 3100 5450 3200
+$Comp
+L power:GND #PWR0101
+U 1 1 5FBF8486
+P 5450 3200
+F 0 "#PWR0101" H 5450 2950 50  0001 C CNN
+F 1 "GND" H 5455 3027 50  0000 C CNN
+F 2 "" H 5450 3200 50  0001 C CNN
+F 3 "" H 5450 3200 50  0001 C CNN
+	1    5450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FBF8A77
+P 6400 4650
+F 0 "#PWR0102" H 6400 4400 50  0001 C CNN
+F 1 "GND" H 6405 4477 50  0000 C CNN
+F 2 "" H 6400 4650 50  0001 C CNN
+F 3 "" H 6400 4650 50  0001 C CNN
+	1    6400 4650
+	1    0    0    -1  
+$EndComp
+Text Label 5600 3000 0    50   ~ 0
+ENC_A
+Text Label 5600 3200 0    50   ~ 0
+ENC_B
+Text Label 5600 3750 0    50   ~ 0
+BTN_L
+Text Label 5600 4550 0    50   ~ 0
+BTN_M
+Text Label 5600 4150 0    50   ~ 0
+BTN_R
+Wire Wire Line
+	5600 3200 5900 3200
+Wire Wire Line
+	5600 3000 5900 3000
+Wire Wire Line
+	5600 3750 5900 3750
+Wire Wire Line
+	5600 4550 5900 4550
+Wire Wire Line
+	5600 4150 5900 4150
+Wire Wire Line
+	5000 3800 4700 3800
+Text Label 5000 3800 2    50   ~ 0
+BTN_L
+Text Label 5000 3600 2    50   ~ 0
+ENC_B
+Wire Wire Line
+	5150 3500 4700 3500
+$Comp
+L power:GND #PWR0103
+U 1 1 5FC030F5
+P 5150 3600
+F 0 "#PWR0103" H 5150 3350 50  0001 C CNN
+F 1 "GND" H 5155 3427 50  0000 C CNN
+F 2 "" H 5150 3600 50  0001 C CNN
+F 3 "" H 5150 3600 50  0001 C CNN
+	1    5150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3500 5150 3600
+Wire Wire Line
+	5000 3900 4700 3900
+Text Label 5000 3900 2    50   ~ 0
+BTN_R
+Wire Wire Line
+	5000 4000 4700 4000
+Text Label 5000 4000 2    50   ~ 0
+BTN_M
+$Comp
+L Connector_Generic:Conn_01x06 J101
+U 1 1 5FBFB612
+P 4500 3800
+F 0 "J101" H 4418 4217 50  0000 C CNN
+F 1 "Conn_01x06" H 4418 4126 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 4500 3800 50  0001 C CNN
+F 3 "~" H 4500 3800 50  0001 C CNN
+	1    4500 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3600 4700 3600
+Text Label 5000 3700 2    50   ~ 0
+ENC_A
+Wire Wire Line
+	5000 3700 4700 3700
+$EndSCHEMATC

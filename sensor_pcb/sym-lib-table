@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Sensor_Tracking)(type Legacy)(uri ${KIPRJMOD}/local/library/Sensor_Tracking.lib)(options "")(descr ""))
+)
